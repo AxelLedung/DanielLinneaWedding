@@ -1,0 +1,149 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Daniel och Linneas bröllop</title>
+    <meta name="description" content="Vi vill bjuda in dig till vår stora dag.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Daniel & Linneas bröllop">
+    <meta property="og:description" content="Vi vill bjuda in dig till vår stora dag.">
+    <meta property="og:image" content="img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body id="top">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+    <![endif]-->  
+    <section data-include="util/navbar.html"></section>
+    <section class="text-center section-padding" id="rsvp">
+
+    <div class="rsvp">
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>Tack!</h3>
+                            <p>Vi är så glad att ni vill vara med på vår stora dag.</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="container">
+            <!-- START HERE -->
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <!-- Style The Contact Form How Ever You Prefer -->
+            <link rel="stylesheet" href="style.css">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Kan ni komma?</h2>
+                    <p>Vi ser gärna att ni fyller i er anmälan innan 20:e Juni</p>
+                    <form class="gform rsvp-form" method="POST" data-email="example@email.net"
+                    action="https://script.google.com/macros/s/AKfycbyKJ0Xx-yRYaZGc5V-1foIPEWppMSpBJL-uWaVpZE_gR2_r_KjqaUbwD_V-Vf7tD-dw/exec">
+                        <div class="form-input-group">
+                            <i class="fa fa-user" style="color: #636c51;"></i><input id="name" name="name" class="" placeholder="Ditt namn" required />
+                        </div>
+                            
+                        <div class="form-input-group">
+                            <i class="fa fa-envelope" style="color: #636c51;"></i><input id="email" name="email" type="email" class="" placeholder="E-post" required />
+                        </div>
+                            
+                        <div class="form-input-group">
+                            <i class="fa fa-fish" style="color: #636c51;"></i><input id="message" name="message" class="" placeholder="Specialkost (ex: Vegan)..."  />
+                        </div>
+                            
+                        <div class="form-input-group ">
+                            <i class="fa fa-phone" style="color: #636c51;"></i><input id="color" name="color" class="" placeholder="0723456132?"  />
+                        </div>
+                            
+                        <div class="form-input-group honeypot-field" style="display:none;">
+                            <input id="honeypot" type="text" name="honeypot" value="" />
+                        </div>
+                            
+                        <button class="btn-fill rsvp-btn" style="margin-bottom: 10px;">
+                            Skicka in mitt svar!
+                        </button>
+                        
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Tack</em> för din anmälan!</h2>
+                            <!-- The form requires a reload to resubmit, so we have a button to reload the page if the user wants to add more people-->
+                            <p>Om du vill anmäla fler personer, vänligen ladda om sidan genom att klicka på knappen.</p>
+                            <div class="col-md-12" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" onclick="window.location.reload();"><i class="fa fa-refresh"></i>&nbsp;&nbsp; <span style="color: #B09C73; font-family: bread-text;">Ladda om sidan</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div data-include="util/footer.html"></div>
+
+<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

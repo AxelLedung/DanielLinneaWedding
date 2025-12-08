@@ -1,0 +1,143 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Daniel och Linneas bröllop</title>
+    <meta name="description" content="Vi vill bjuda in dig till vår stora dag.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Daniel & Linneas bröllop">
+    <meta property="og:description" content="Vi vill bjuda in dig till vår stora dag.">
+    <meta property="og:image" content="img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+    <![endif]--> 
+    <section data-include="util/navbar.html"></section>
+
+    <section id="wedding-gifts" class="section-padding">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2>Bröllopsgåvor</h2>
+                <p>Den finaste gåvan är att fira vår dag tillsammans med er! Om ni ändå känner att ni vill ha med något kommer här några saker vi skulle älska att få som bröllopsgåvor.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/italy.jpg" alt="Gift 1">
+                    <h4>Bidrag till smekmånad i Italien</h4>
+                    <p>Resan bär av till vackra Italien där vi planerar att äta och dricka gott. Eftersom budgeten tog slut efter denna fest kan man swisha valfritt bidrag till brudens mor Maria Jonsson 070-2492227. Bidragen kommer sedan skickas vidare till oss, detta för att hålla alla summor anonyma.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/cervera.jpg" alt="Gift 2">
+                    <h4>Presentkort Cervera</h4>
+                    <p>Vi behöver uppdatera vår servis! Ett gift par behöver matchande tallrikar. Ett bidrag till detta kommer uppskattas enormt.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/mio.jpg" alt="Gift 3">
+                    <h4>Presentkort Mio</h4>
+                    <p>Gardiner som inte är solblekta, lampskärmar som matchar och kuddfodral som är utan hål kommer dessa presentkort gå till.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/ikea.png" alt="Gift 4">
+                    <h4>Presentkort Ikea</h4>
+                    <p>Gardiner som inte är solblekta, lampskärmar som matchar och kuddfodral som är utan hål kommer dessa presentkort gå till. Eventuellt en bokhylla och ett eller 7 nya paket med värmeljus också.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <!-- <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/bridal_party/NGP_4089-sm.jpg" alt="Gift 5">
+                    <h4>Present Namn 5</h4>
+                    <p>Beskrivning av present 5.</p>
+                </div>
+            </div> -->
+            <!-- Card 6 -->
+            <!-- <div class="col-md-4">
+                <div class="gift-card">
+                    <img class="wedding-gift" src="img/bridal_party/NGP_4089-sm.jpg" alt="Gift 6">
+                    <h4>Present Namn 6</h4>
+                    <p>Beskrivning av present 6.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<div data-include="util/footer.html"></div>
+
+<script src="../js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="../node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="../js/jquery.fancybox.pack.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<script src="../js/jquery.flexslider-min.js"></script>
+<script src="../js/jquery.mb.YTPlayer.min.js"></script>
+<script src="../js/vendor/ouical.js"></script>
+<script src="../js/scripts.min.js"></script>
+<script data-cfasync="false" type="text/javascript" src="../form-submission-handler.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
