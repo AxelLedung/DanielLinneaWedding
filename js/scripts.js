@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
 
     /***************** Waypoints ******************/
 
@@ -84,7 +85,6 @@ $(document).ready(function () {
     });
 
     /***************** Header BG Scroll ******************/
-
     $(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -92,7 +92,7 @@ $(document).ready(function () {
             if (scroll >= 20) {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
-                    "border-bottom": "none",
+                    "border-bottom": "solid 1px #D8B238",
                     "padding": "35px 0"
                 });
                 $('header .member-actions').css({
@@ -104,8 +104,8 @@ $(document).ready(function () {
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
-                    "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "39px 0"
                 });
                 $('header .member-actions').css({
                     "top": "41px",
@@ -150,23 +150,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ida & Andreas Bröllop",
+            title: "Linnea & Daniels bröllop",
 
             // Event start date
-            start: new Date('Juli 20, 2024 17:00'),
+            start: new Date('Juni 13, 2026 15:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Juli 20, 2024 00:00'),
+            end: new Date('Juni 13, 2026 00:00'),
 
             // Event Address
-            address: 'Sjögattu 43, 793 70 Tällberg',
+            address: 'Ernsäsvägen 83, 975 92 Luleå',
 
             // Event Description
-            description: "Vi ser fram emot att se dig på vår stora dag. För eventuella frågor eller problem kontakta Rasmus Lindy eller Silja Proper"
+            description: "Vi ser fram emot att se dig på vår stora dag."
         }
     });
 
@@ -296,7 +296,9 @@ $(document).ready(function () {
             }
         }
     })();
-    document.addEventListener("DOMContentLoaded", function () {
+});
+/*
+document.addEventListener("DOMContentLoaded", function () {
         // Initially hide the map
         document.getElementById('location-map').style.display = 'none';
 
@@ -331,5 +333,4 @@ $(document).ready(function () {
 
         updateCountdown();
         setInterval(updateCountdown, 1000);
-    });
-});
+    });*/

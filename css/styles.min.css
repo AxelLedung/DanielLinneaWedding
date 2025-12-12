@@ -398,7 +398,7 @@ to {
 }
 .fixed {
     position: fixed;
-    background-color: #22251A;
+    background-color: #ffffff;
     z-index: 999;
     width: 100%
 }
@@ -432,7 +432,7 @@ header ul.primary-nav li {
     display: inline;
 }
 header ul.primary-nav li a {
-    color: #fff;
+    color: #000;
     padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -445,7 +445,7 @@ header ul.member-actions li {
     display: inline;
 }
 header ul.member-actions li a {
-    color: #fff;
+    color: #000;
 }
 header ul.member-actions li a:hover {
     color: #b09970;
