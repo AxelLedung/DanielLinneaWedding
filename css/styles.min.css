@@ -16,7 +16,7 @@
     p {
     font-size: 15px;
     line-height: 29px;
-    color: #B09C73;
+    color: black;
     font-family: bread-text;
     padding-bottom: 20px;
   
@@ -25,7 +25,7 @@ li{
     border-color: #AB6438;
 }
 span{
-    color: #B09C73;
+    color: black;
     font-family: bread-text;
 
 }
@@ -35,13 +35,13 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: 300;
-    color: #B09C73;
+    color: #BF9B30;
     font-family: sub-heading;
 
 }
 
 h3 {
-    color: #B09C73;
+    color: black;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -51,14 +51,14 @@ h3 {
 }
 h4 {
     font-size: 18px;
-    color: #B09C73;
+    color: black;
     font-family: sub-heading;
 
 
 }
 h5 {
     font-size: 15px;
-    color: #B09C73;
+    color: black;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -860,7 +860,7 @@ body.modal-open {
 }
 p  {
     
-  color:  #B09C73 !important;
+  color:  black !important;
     
 }
 /* span  {
@@ -869,11 +869,15 @@ p  {
     
 } */
 .container{
-    background-color: #454C39;
+    background-image: url("../img/test2.jpg");
+    background-position: center;
+    background-size: cover;
+    /*
+    background-color: #454C39;*/
     border-radius: 30px;
 }
 .modal-content{
-    background-color: #454C39;
+    background-color: #E5DECF;
 
 }
 .image-same-size {
@@ -981,7 +985,8 @@ body::-webkit-scrollbar-track {
   background: #f1f1f1; /* Color for the scrollbar track */
 }
 body {
-    background-image: url("../img/bg2.jpeg"); /* Replace with your image path */
+    /* background-image: url("../img/bg2.jpeg"); */
+    background-color: #E5DECF; /* Replace with your image path */
     background-repeat: no-repeat; /* Prevent image tiling */
     background-attachment: fixed; /* Keep image fixed on scroll */
     background-size: cover; /* Scale image to cover the viewport */
@@ -1033,6 +1038,10 @@ body {
 
 .bridal-party-card p {
   padding: 1rem;
+}
+.close {
+    opacity: 0.8;
+    color: black;
 }
 
 /* Responsive media queries */
