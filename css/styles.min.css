@@ -1062,3 +1062,45 @@ body {
     width: 100%;
   }
 }
+.names {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.person h2,
+.person h3 {
+    margin: 0;
+}
+
+.person h3 {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+div.tablecontainer {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: left;
+}
+table input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 6px;
+}
+
+table input:focus {
+    outline: 1px solid #ccc;
+    background: #f9f9f9;
+}
