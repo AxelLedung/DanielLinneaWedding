@@ -352,8 +352,8 @@ to {
 }
 .hero {
     margin-top: 100px;
-    min-height: 750px;
-    background: url("../img/hero-min.jpg") center center;
+    min-height: 500px;
+    background: url("../img/start.png") center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -386,7 +386,13 @@ to {
     margin-bottom: 80px;
 }
 .hero .hero-content {
-    padding-top: 30%}
+    padding-top: 20%;
+}
+.hero .hero-content h1 {
+    font-family: 'sub-heading';
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
 .hero .hero-content img {
     width: 55%;
     margin-bottom: 12%}
