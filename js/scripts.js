@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     
 
@@ -69,31 +70,18 @@ $(document).ready(function () {
     /***************** Tooltips ******************/
     $('[data-toggle="tooltip"]').tooltip();
 
-    /***************** Nav Transformicon ******************/
-
-    /* When user clicks the Icon */
-    $('.nav-toggle').click(function () {
-        $(this).toggleClass('active');
-        $('.header-nav').toggleClass('open');
-        event.preventDefault();
-    });
-    /* When user clicks a link */
-    $('.header-nav li a').click(function () {
-        $('.nav-toggle').toggleClass('active');
-        $('.header-nav').toggleClass('open');
-
-    });
 
     /***************** Header BG Scroll ******************/
     $(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 20) {
+            if (scroll >= 20 && $('.primary-nav').hasClass('open') == true) {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px #D8B238",
-                    "padding": "35px 0"
+                    "padding": "35px 0 0 0"
+                    
                 });
                 $('header .member-actions').css({
                     "top": "26px",
@@ -101,7 +89,41 @@ $(document).ready(function () {
                 $('header .navicon').css({
                     "top": "34px",
                 });
-            } else {
+                $('.header-nav').css({
+                    "background-color": "#fff",
+                });
+            } 
+            else if (scroll >= 20 && $('.primary-nav').hasClass('open') == false) {
+                $('section.navigation').addClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "35px 0"
+                    
+                });
+                $('header .member-actions').css({
+                    "top": "26px",
+                });
+                $('header .navicon').css({
+                    "top": "34px",
+                });
+            } 
+            else if (scroll < 20 && $('.primary-nav').hasClass('open') == true) {
+                $('section.navigation').removeClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "39px 0px 0px 0px"
+                });
+                $('header .member-actions').css({
+                    "top": "41px",
+                });
+                $('header .navicon').css({
+                    "top": "40px",
+                });
+                $('.header-nav').css({
+                    "background-color": "#E5DECF",
+                });
+            }
+            else if (scroll < 20 && $('.primary-nav').hasClass('open') == false) {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px #D8B238",
@@ -111,7 +133,20 @@ $(document).ready(function () {
                     "top": "41px",
                 });
                 $('header .navicon').css({
-                    "top": "48px",
+                    "top": "40px",
+                });
+            }
+            else {
+                $('section.navigation').removeClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "39px 0 0 0"
+                });
+                $('header .member-actions').css({
+                    "top": "41px",
+                });
+                $('header .navicon').css({
+                    "top": "40px",
                 });
             }
         });
@@ -171,6 +206,76 @@ $(document).ready(function () {
     });
 
     $('#add-to-cal').html(myCalendar);
+
+    /***************** Hamburger Navigation ******************/
+    $(document).on("click", "#hamburger", function (e) {
+        e.preventDefault(); 
+        $(this).toggleClass("active");
+        $(".primary-nav").toggleClass("open");
+        $("header").toggleClass("header-open");
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 20 && $('.primary-nav').hasClass('open') == false) {
+                $('section.navigation').addClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "35px 0"
+                    
+                });
+                $('header .member-actions').css({
+                    "top": "26px",
+                });
+                $('header .navicon').css({
+                    "top": "34px",
+                });
+            } 
+            else if (scroll >= 20 && $('.primary-nav').hasClass('open') == true) {
+                $('section.navigation').addClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "35px 0 0 0"
+                    
+                });
+                $('header .member-actions').css({
+                    "top": "26px",
+                });
+                $('header .navicon').css({
+                    "top": "34px",
+                });
+                $('.header-nav').css({
+                    "background-color": "#fff",
+                });
+            } 
+            else if (scroll < 20 && $('.primary-nav').hasClass('open') == true) {
+                $('section.navigation').removeClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "39px 0px 0px 0px"
+                });
+                $('header .member-actions').css({
+                    "top": "41px",
+                });
+                $('header .navicon').css({
+                    "top": "40px",
+                });
+                $('.header-nav').css({
+                    "background-color": "#E5DECF",
+                });
+            }
+            else if (scroll < 20 && $('.primary-nav').hasClass('open') == false) {
+                $('section.navigation').removeClass('fixed');
+                $('header').css({
+                    "border-bottom": "solid 1px #D8B238",
+                    "padding": "39px 0"
+                });
+                $('header .member-actions').css({
+                    "top": "41px",
+                });
+                $('header .navicon').css({
+                    "top": "40px",
+                });
+            }
+    });
 
 
     /********************** RSVP **********************/
