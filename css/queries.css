@@ -244,6 +244,9 @@
         margin-top: 0;
         padding: 35px;
     }
+    .container {
+        background: #fff;
+    }
 
     .rsvp {
         padding-top: 40px;
